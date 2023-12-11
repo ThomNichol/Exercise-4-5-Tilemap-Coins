@@ -1,8 +1,9 @@
-[gd_scene load_steps=49 format=3 uid="uid://xpdr741qjqi3"]
+[gd_scene load_steps=50 format=3 uid="uid://xpdr741qjqi3"]
 
 [ext_resource type="Texture2D" uid="uid://c653t8ajilnb7" path="res://Assets/tilesheet_complete_2X.png" id="1"]
 [ext_resource type="Script" path="res://Camera.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://cpe06b287tcqw" path="res://Assets/coin.png" id="2_mxnyj"]
+[ext_resource type="Script" path="res://Player/Coins.gd" id="3_o1orc"]
 [ext_resource type="Script" path="res://StateMachine/Player_Container.gd" id="12"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c34oo"]
@@ -517,6 +518,7 @@ layer_0/tile_data = PackedInt32Array(-720896, 1, 0, -720895, 1, 0, -720894, 1, 0
 tile_set = SubResource("TileSet_fpbi5")
 format = 2
 layer_0/tile_data = PackedInt32Array(-65520, 0, 0, -196596, 0, 0, -131047, 0, 0, 65558, 0, 0, 262181, 0, 0, 262180, 0, 0, 327724, 0, 0, 196648, 0, 0, 65588, 0, 0, 524337, 0, 0, -65527, 0, 0, 131084, 0, 0, 131085, 0, 0, -196594, 0, 0)
+script = ExtResource("3_o1orc")
 
 [node name="Player_Container" type="Node2D" parent="."]
 script = ExtResource("12")
