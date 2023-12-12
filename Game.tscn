@@ -562,6 +562,8 @@ color = Color(1, 1, 1, 0.490196)
 
 [node name="Coins" type="Label" parent="UI/HUD"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 10.0
+offset_right = 410.0
+offset_bottom = 40.0
+text = "Coins: 0"
 vertical_alignment = 1
