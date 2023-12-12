@@ -8,6 +8,6 @@ func _unhandled_input(event):
 		
 func add_coin():
 	coins += 1
-	var HUD = get_node_or_null("root/UI/HUD/Coins")
-	if HUD != null:
-		HUD.label = "Coins: " + str(coins)
+	var Coins = get_node_or_null("/root/Game/UI/HUD/Coins")
+	if Coins != null:
+		Coins.text = "Coins: " + str(coins)
