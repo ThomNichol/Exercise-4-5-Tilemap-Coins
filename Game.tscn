@@ -517,7 +517,7 @@ layer_0/tile_data = PackedInt32Array(-720896, 1, 0, -720895, 1, 0, -720894, 1, 0
 [node name="Coins" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_fpbi5")
 format = 2
-layer_0/tile_data = PackedInt32Array(-65520, 0, 0, -196596, 0, 0, -131047, 0, 0, 65558, 0, 0, 262181, 0, 0, 262180, 0, 0, 327724, 0, 0, 196648, 0, 0, 65588, 0, 0, 524337, 0, 0, -65527, 0, 0, 131084, 0, 0, 131085, 0, 0, -196594, 0, 0)
+layer_0/tile_data = PackedInt32Array(327724, 0, 0, 65588, 0, 0, 524337, 0, 0, 262148, 0, 0, 262180, 0, 0, 65552, 0, 0, 262169, 0, 0, 262170, 0, 0, 65567, 0, 0, 65570, 0, 0, 262181, 0, 0, 524327, 0, 0)
 script = ExtResource("3_o1orc")
 
 [node name="Player_Container" type="Node2D" parent="."]
@@ -541,3 +541,27 @@ drag_top_margin = 0.1
 drag_right_margin = 0.1
 drag_bottom_margin = 0.1
 script = ExtResource("2")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="UI/HUD"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 40.0
+grow_horizontal = 2
+color = Color(1, 1, 1, 0.490196)
+
+[node name="Coins" type="Label" parent="UI/HUD"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+vertical_alignment = 1
